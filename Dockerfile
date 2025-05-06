@@ -3,7 +3,7 @@
 # Reproduction is forbidden without written approval of Sensormatic Electronics, LLC.
 #*******************************************************************************
 
-FROM gcr.io/tvc-common/jdk/eclipse-temurin:17-alpine
+FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
 RUN mkdir /opt/app
 COPY target/spring-api-base*.jar /opt/app/japp.jar
